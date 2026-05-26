@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import NavDrawer from "@/components/shared/NavDrawer";
+import { MobileNav } from "@/components/shared/MobileNav";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +30,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex">
+        <MobileNav />
+        <NavDrawer />
+        <main className="flex-1 p-5 md:p-10 md:pl-26 lg:p-15 lg:pl-31 bg-slate-50/50">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
