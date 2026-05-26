@@ -51,3 +51,24 @@ src/
 - 다양한 배출원 확장: 현재의 4가지 주요 에너지원 외에도 용수, 폐기물 등 탄소 회계 표준에 따른 배출원 항목을 동적으로 추가 검토
 - DB 연동: 현재는 메모리 기반 가짜 DB를 사용하고 있으며, 실제 운영 환경을 고려한다면 Supabase나 Prisma로 교체하여 데이터 영속성 확보
 - 유닛 테스트 보강: 기능 구현과 UX 최적화에 우선순위를 두어, Jest/Cypress를 활용한 상세 테스트 코드는 생략
+
+## 6. 프로젝트 데모
+![Dashboard demo](https://github.com/user-attachments/assets/b0f59bfe-3ffe-430f-a1d7-14c3d576264a)
+<table align='center' style="border-collapse: collapse; border: none; border-spacing: 0;">
+    <tr align="center" style="border: none;" >
+        <td style="border: none;">
+            <img src="https://github.com/user-attachments/assets/5119075b-f5d8-4c46-92ef-3a30d7270c4d" width="400" alt="Dashboard mobile" />
+        </td>
+        <td style="border: none;">
+            <img src="https://github.com/user-attachments/assets/eda1832c-9704-4672-a286-5427a6723e6d" height="300" alt="pcfCalc mobile" />
+        </td>
+    </tr>
+    <tr align="center" style="border: none;">
+        <td style="border: none;">
+            <p>Dashboard mobile</p>
+        </td>
+        <td style="border: none;">
+            <p>PCFCalc mobile</p>
+        </td>
+    </tr>
+</table>
