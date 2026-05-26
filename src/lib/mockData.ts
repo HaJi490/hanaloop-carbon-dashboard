@@ -1,7 +1,7 @@
 /**
  * Mock API 정의 
  */
-import { GhgEmission, Company, ProductPCF, Post } from "@/types/dto";
+import { GhgEmission, Company, ProductPCF, PostDTO } from "@/types/dto";
 import { EMISSION_FACTORS } from "@/constants/EmissionFactors";
 
 // GHB 데이터 생성
@@ -109,7 +109,7 @@ export const mockProducts: ProductPCF[] = [
 }));
 
 // 배출 리포트
-export const mockPosts: Post[] = [
+export const mockPosts: PostDTO[] = [
     {
         id: "post-1",
         title: "1월 탄소 배출량 급증 원인 분석",

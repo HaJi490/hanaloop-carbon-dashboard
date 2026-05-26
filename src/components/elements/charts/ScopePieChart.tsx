@@ -4,8 +4,14 @@ import { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import ChartLoading from "@/components/ui/ChartLoading";
 
+export type PieCharts = {
+    name: string;
+    value: number;
+    fill: string;
+}
+
 interface ScopePieChartProps {
-    data: any[];
+    data: PieCharts[];
 }
 
 export default function ScopePieChart({ data }: ScopePieChartProps) {

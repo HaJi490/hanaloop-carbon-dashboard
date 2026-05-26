@@ -2,12 +2,19 @@ import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 import { GhgEmission } from "@/types/dto";
 
+export interface EmissionChartData {
+  month: string; 
+  scope1: number;
+  scope2: number;
+  scope3: number;
+}
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
 export const prepareBarData = (emissions: GhgEmission[]) => {
-  const chartDataMap: Record<string, any> = {};
+  const chartDataMap: Record<string, EmissionChartData> = {};
 
   emissions.forEach((e) => {
     if (!chartDataMap[e.yearMonth]) {

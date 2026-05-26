@@ -22,7 +22,7 @@ export type ProductPCF = {
     totalPcf: number; //결과값 (kgCO2e)
 };
 
-export type Post = {
+export type PostDTO = {
     id: string;
     title: string;
     resourceUid: string;

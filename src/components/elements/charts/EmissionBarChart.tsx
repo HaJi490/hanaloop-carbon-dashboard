@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import ChartLoading from "@/components/ui/ChartLoading";
+import { EmissionChartData } from "@/lib/utils";
 
 interface EmissionBarChartProps {
-    data: any[];
+    data: EmissionChartData[];
 }
 
 export default function EmissionBarChart({ data }: EmissionBarChartProps) {

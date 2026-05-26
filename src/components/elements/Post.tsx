@@ -9,11 +9,12 @@ import {
     DialogDescription,
     DialogTrigger,
 } from "@/components/ui/dialog";
+import { PostDTO } from "@/types/dto";
 import { CircleSmall } from 'lucide-react';
 
 
 interface PostProps {
-    data: any[];
+    data: PostDTO[];
 }
 
 export default function Post({ data }: PostProps) {
