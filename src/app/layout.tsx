@@ -4,6 +4,7 @@ import "./globals.css";
 
 import NavDrawer from "@/components/shared/NavDrawer";
 import { MobileNav } from "@/components/shared/MobileNav";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <main className="flex-1 p-5 md:p-10 md:pl-26 lg:p-15 lg:pl-31 bg-slate-50/50">
           {children}
         </main>
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );

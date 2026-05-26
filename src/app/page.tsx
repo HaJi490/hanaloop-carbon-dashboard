@@ -1,5 +1,5 @@
-
-import { companies, mockPosts } from "@/lib/api";
+import { api } from "@/lib/api";
+import { mockPosts } from "@/lib/mockData";
 import { prepareBarData, preparePieData } from "@/lib/utils";
 import Container from "@/components/shared/Container";
 import StatCard from "@/components/elements/card/StatCard";
@@ -46,9 +46,9 @@ const STAT_VALUE = [
 ] as const;
 
 export default async function Home() {
-  const company = companies[0];
-  const barChartData = prepareBarData(company.emissions);
-  const pieChartData = preparePieData(company.emissions);
+  const emissions = await api.getEmission();
+  const barChartData = prepareBarData(emissions);
+  const pieChartData = preparePieData(emissions);
 
   return (
     <Container>

@@ -31,7 +31,7 @@ export default function Post({ data }: PostProps) {
                 <span className='hidden sm:block col-span-1 lg:col-span-1'>번호</span>
                 <span className='col-span-6 sm:col-span-5 lg:col-span-4'>제목</span>
                 <span className='col-span-1 hidden lg:block'>작성자</span>
-                <span className='scol-span-2 lg:col-span-2'>작성일</span>
+                <span className='col-span-2 lg:col-span-2'>작성일</span>
             </div>
             {data.map((item, idx) => (
                 <Dialog key={item.id}>

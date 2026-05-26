@@ -1,4 +1,4 @@
-import { mockPosts } from "@/lib/api";
+import { mockPosts } from "@/lib/mockData";
 import Container from "@/components/shared/Container"
 import Post from "@/components/elements/Post";
 
